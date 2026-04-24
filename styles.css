@@ -392,15 +392,15 @@ dialog::backdrop {
     width: 100vw;
     max-width: 100vw;
     overflow-x: hidden;
-    padding: 14px;
+    padding: 10px;
   }
 
   .scene {
-    width: calc(100vw - 28px);
+    width: calc(100vw - 20px);
     min-height: auto;
     min-width: 0;
     padding: 12px 0 24px;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .closed-scroll {
@@ -413,15 +413,15 @@ dialog::backdrop {
   }
 
   .letter {
-    width: 430px;
-    max-width: 430px;
+    width: calc(100vw - 20px);
+    max-width: calc(100vw - 20px);
     min-height: auto;
     justify-self: center;
-    padding: 78px 13px 24px;
+    padding: 78px 12px 24px;
   }
 
   .letter.is-open {
-    transform: translateX(-72px) scale(0.74);
+    transform: scale(1);
     transform-origin: top center;
   }
 
@@ -437,18 +437,18 @@ dialog::backdrop {
   }
 
   h1 {
-    font-size: clamp(21px, 6.2vw, 27px);
+    font-size: clamp(18px, 5.3vw, 23px);
     line-height: 1;
   }
 
   h2 {
-    font-size: clamp(19px, 5.4vw, 24px);
+    font-size: clamp(16px, 4.7vw, 20px);
     line-height: 1.04;
   }
 
   p,
   blockquote {
-    font-size: clamp(16px, 4.55vw, 20px);
+    font-size: clamp(14px, 3.85vw, 17px);
     line-height: 1.09;
   }
 
@@ -474,16 +474,16 @@ dialog::backdrop {
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   p,
   blockquote {
-    font-size: 15.5px;
+    font-size: 14px;
   }
 
   .actions {
