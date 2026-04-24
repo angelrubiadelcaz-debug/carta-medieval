@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solemne Peticion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="confetti" aria-hidden="true"></canvas>
+
+    <main class="stage">
+      <section class="scene" aria-live="polite">
+        <button class="closed-scroll" id="openScroll" type="button" aria-label="Abrir pergamino">
+          <span class="roll"></span>
+          <span class="fold">
+            <span class="seal-small">A</span>
+            <span class="open-label">Abrir pergamino</span>
+          </span>
+          <span class="roll"></span>
+        </button>
+
+        <article class="letter" id="letter">
+          <p class="scribble">A macio avce el emote E nomiũ<br />qrrü original medieval.</p>
+
+          <div class="miniature" aria-hidden="true">
+            <div class="person left"></div>
+            <div class="person right"></div>
+          </div>
+
+          <h1>Solemne Petición de un Caballero Enamorado</h1>
+          <h2>A la atención de mi amada y dulcísima Señora, Doña Alba,</h2>
+
+          <p>
+            Por la presente, yo, <strong>Don Angel</strong>, humilde servidor y leal vasallo de
+            vuestra belleza y cautivo de vuestra sonrisa, hago llegar ante vuestra presencia este
+            pergamino, portador de una cuita que consume mi ser y no admite más demora:
+          </p>
+
+          <blockquote>
+            Que tenga a bien vuestra merced, en un acto de divina condescendencia, revelaros ante
+            este vuestro leal caballero y permitirle contemplar, aunque sea por un instante, las dos
+            colinas gemelas de marfil que guardan vuestro corazón, y el valle sagrado que entre ellas
+            se insinúa.
+          </blockquote>
+
+          <p>
+            No busco alterar el orden de los reinos, sino obtener la gracia de vuestra
+            condescendencia, la cual valoro más que todas las riquezas de Oriente. Quede constancia
+            de que vuestras virtudes serán cantadas por los juglares.
+          </p>
+
+          <p class="date">
+            Dado en el Castillo de Valladolid, a 23 de abril del año de nuestro señor de 2026.
+          </p>
+
+          <p class="signature">Don Angel</p>
+          <div class="big-seal" aria-hidden="true">✠</div>
+
+          <div class="actions">
+            <button class="accept" id="acceptBtn" type="button">Aceptar</button>
+            <button class="deny" id="denyBtn" type="button">Denegar</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <dialog id="denyDialog">
+      <div class="modal">
+        <p>Ese botón no está disponible ahora mismo, tiene que aceptar.</p>
+        <button id="closeDialog" type="button">Entendido</button>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
