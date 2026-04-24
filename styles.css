@@ -421,7 +421,7 @@ dialog::backdrop {
   }
 
   .letter.is-open {
-    transform: scale(1);
+    transform: translateX(8px) scale(1);
     transform-origin: top center;
   }
 
